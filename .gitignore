@@ -22,5 +22,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# yarn v3 ignores
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # vscode workspace configuration
 .vscode/
