@@ -10,4 +10,10 @@ interface Route {
 }
 
 export const routes: Array<Route> = [
+  {
+    path: "/register",
+    to: "register",
+    Component: lazy(() => import("../forms/pages/RegisterPage")),
+    name: "Register",
+  }
 ]
