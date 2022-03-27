@@ -15,5 +15,17 @@ export const routes: Array<Route> = [
     to: "register",
     Component: lazy(() => import("../forms/pages/RegisterPage")),
     name: "Register",
+  },
+  {
+    path: "/formik-basic",
+    to: "formik-basic",
+    Component: lazy(() => import("../forms/pages/FormikBasicPage")),
+    name: "FormikBasic",
+  },
+  {
+    path: "/formik-yup",
+    to: "formik-yup",
+    Component: lazy(() => import("../forms/pages/FormikYupPage")),
+    name: "FormikYup",
   }
 ]
