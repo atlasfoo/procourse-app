@@ -12,7 +12,7 @@ const Navigation = () => {
         <nav>
           <img src={logo} alt="React Logo" />
           <ul>
-            {routes.map(({to, name})=>(
+            {routes.length > 0 && routes.map(({to, name})=>(
               <li key={to}>
                 <NavLink to={to} className={({isActive}) => isActive? 'nav-active' : '' }>{name}</NavLink>
               </li>
@@ -20,10 +20,11 @@ const Navigation = () => {
           </ul>
         </nav>
         <Routes>
-          {routes.map(route=>(
+          {routes.length > 0  && routes.map(route=>(
             <Route key={route.to} path={route.path} element={<route.Component/>} />
           ))}
-          <Route path="/*" element={ <Navigate to={routes[0].to} replace/>}/>
+          {routes.length > 0 &&
+              <Route path="/*" element={ <Navigate to={routes[0].to} replace/>}/>}
         </Routes>
       </div>
     </BrowserRouter>
