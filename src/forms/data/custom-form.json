@@ -1,0 +1,82 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "First Name",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First Name is required"
+      },
+      {
+        "type": "minLength",
+        "message": "Name must be at least 5 characters",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Last Name",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Last Name is required"
+      },
+      {
+        "type": "minLength",
+        "message": "Last Name must be at least 5 characters",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "Email",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Email has incorrect format"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteColor",
+    "placeholder": "Favorite Color",
+    "label": "Favorite Color",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Please select a favorite color"
+      }
+    ],
+    "options": [
+      {
+        "label": "Red",
+        "value": "red"
+      },
+      {
+        "label": "Green",
+        "value": "green"
+      },
+      {
+        "label": "Blue",
+        "value": "blue"
+      }
+    ]
+  }
+]
