@@ -71,8 +71,7 @@
 *.zip      binary
 
 # Linguist
-/.yarn/** linguist-vendored
-
+*.js linguist-vendored
 
 # Text files where line endings should be preserved
 *.patch    -text
