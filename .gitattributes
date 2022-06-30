@@ -71,7 +71,7 @@
 *.zip      binary
 
 # Linguist
-*/.yarn/* linguist-vendored
+*/.yarn/releases/* linguist-vendored
 
 
 # Text files where line endings should be preserved
